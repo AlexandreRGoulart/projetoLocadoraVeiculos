@@ -9,6 +9,14 @@ public class Cliente {
 	private int numeroTel;
 	private String endereco;
 	private List<IProduto> produtos;
+	private List<IProduto> produtos1;
+	
+	
+	public <T> List<T> alugarProduto(List<T> produto) {
+		IProduto p1 = (IProduto) produto;
+		this.produtos.add(p1);
+		return produto;
+	}
 	
 
 }
