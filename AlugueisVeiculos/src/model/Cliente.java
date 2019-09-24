@@ -8,7 +8,19 @@ public class Cliente {
 	private String cpf;
 	private String telefone;
 	private String endereco;
+<<<<<<< HEAD
 	private List<Produto> produtos;
+=======
+	private List<IProduto> produtos;
+	private List<IProduto> produtos1;
+	
+	
+	public <T> List<T> alugarProduto(List<T> produto) {
+		IProduto p1 = (IProduto) produto;
+		this.produtos.add(p1);
+		return produto;
+	}
+>>>>>>> 1dd5286e86939f4f73a9fb52c6cb1826553f0587
 	
 	public Cliente(String nome, String cpf, String telefone, String endereco) {
 		super();
