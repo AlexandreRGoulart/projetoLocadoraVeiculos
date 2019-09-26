@@ -8,9 +8,9 @@ public class Cliente {
 	private String cpf;
 	private String telefone;
 	private String endereco;
-<<<<<<< HEAD
+/*
 	private List<Produto> produtos;
-=======
+	-------------------------------
 	private List<IProduto> produtos;
 	private List<IProduto> produtos1;
 	
@@ -20,7 +20,8 @@ public class Cliente {
 		this.produtos.add(p1);
 		return produto;
 	}
->>>>>>> 1dd5286e86939f4f73a9fb52c6cb1826553f0587
+*/	
+	Generico<Veiculo> v1 = new Generico<>();
 	
 	public Cliente(String nome, String cpf, String telefone, String endereco) {
 		super();
@@ -28,9 +29,13 @@ public class Cliente {
 		this.cpf = cpf;
 		this.telefone = telefone;
 		this.endereco = endereco;
-		this.produtos = new ArrayList<Produto>();
+		//this.produtos = new ArrayList<Produto>();
+		
 	}
 	
+	
+	
+	/*Parte desse codigo vai pra classe "Funcionario" daqui...(até a linha 71+-)*/
 	public void addCarro(String nome, double precoPorAluguel, String cor, String chassi, String placa, String modelo, int ano,
 			double motor, int lugares, int portas) {
 		Carro carro = new Carro(nome, precoPorAluguel, cor, chassi, placa, modelo, ano, motor, lugares, portas);
@@ -63,6 +68,7 @@ public class Cliente {
 		this.getProdutos().add(guincho);
 	}
 	
+	/*...até aqui*/
 	public String getNome() {
 		return nome;
 	}

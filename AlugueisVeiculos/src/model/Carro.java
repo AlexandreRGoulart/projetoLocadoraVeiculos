@@ -4,7 +4,6 @@ public class Carro extends Automovel{
 	private int lugares;
 	private int portas;
 	private boolean completo;
-<<<<<<< HEAD
 
 	public Carro() {
 		super();
@@ -49,12 +48,10 @@ public class Carro extends Automovel{
 		return "Carro";
 	}
 
-=======
 	
 	public Carro(int lugares, int portas, boolean completo) {
 		this.lugares = lugares;
 		this.portas = portas;
 		this.completo = completo;
 	}
->>>>>>> 1dd5286e86939f4f73a9fb52c6cb1826553f0587
 }
