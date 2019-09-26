@@ -33,10 +33,12 @@ public class Cliente {
 		//this.produtos = new ArrayList<Produto>();
 		
 	}
-	
-	public boolean setProduto() {
-		this.
-	}
+	/*
+	public void setProduto(ArrayList<? extends Veiculo> lista) {
+		for
+		this.produtos = ?;
+		
+	}*/
 	
 	
 	
@@ -105,7 +107,11 @@ public class Cliente {
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
 	}
-
+	
+	public void  setProdutos(List<? extends Veiculo> produtos) {
+		this.produtos = (List<Produto>) produtos;
+	}
+	
 	public List<Produto> getProdutos() {
 		return produtos;
 	}
