@@ -9,6 +9,7 @@ import model.Generico;
 import model.Moto;
 import model.Produto;
 import model.Relatorio;
+import model.Veiculo;
 
 public class Teste1 {
 	public static void main(String[] args) {
@@ -31,7 +32,7 @@ public class Teste1 {
 		System.out.println("_____________________________________\n");
 		/* esse .get() vem da onde?*/
 		Generico g = new Generico();
-		c.setProdutos(g);
+		c.setProdutos((List<? extends Veiculo>) g.getElemento());
 		Produto p2 = c.getProdutos().get(1);
 		Produto p3 = c.getProdutos().get(2);
 		Produto p4 = c.getProdutos().get(3);
