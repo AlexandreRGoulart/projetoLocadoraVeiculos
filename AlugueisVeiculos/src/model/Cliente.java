@@ -109,8 +109,11 @@ public class Cliente {
 	}
 	
 	public void  setProdutos(List<? extends Veiculo> produtos) {
+	
 		this.produtos = (List<Produto>) produtos;
-	}
+		
+		
+	}	
 	
 	public List<Produto> getProdutos() {
 		return produtos;

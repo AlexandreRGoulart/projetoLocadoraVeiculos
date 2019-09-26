@@ -5,6 +5,7 @@ import java.util.List;
 import model.Bicicleta;
 import model.Carro;
 import model.Cliente;
+import model.Generico;
 import model.Moto;
 import model.Produto;
 import model.Relatorio;
@@ -29,7 +30,8 @@ public class Teste1 {
 		System.out.println(c.toString());
 		System.out.println("_____________________________________\n");
 		/* esse .get() vem da onde?*/
-		c.setProdutos(p1);
+		Generico g = new Generico();
+		c.setProdutos(g);
 		Produto p2 = c.getProdutos().get(1);
 		Produto p3 = c.getProdutos().get(2);
 		Produto p4 = c.getProdutos().get(3);
