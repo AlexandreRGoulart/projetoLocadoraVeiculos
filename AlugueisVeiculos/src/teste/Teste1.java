@@ -16,24 +16,26 @@ public class Teste1 {
 // Bicicleta(nome, precoPorAluguel, cor, marchas)			
 		
 		System.out.println("Testando...");
-		Cliente c = new Cliente("Fulano", "111.222.333-44", "987654321", "Rua1");	
+		Cliente c = new Cliente("Fulano", "111.222.333-44", "987654321", "Rua1");
+		
+		/*
 		c.addCarro("carro", 1000, "branco", "2145896", "POO-2019", "CARRO" , 2019, 1, 5, 4);	
 		c.addMoto("moto", 100, "azul", "458965", "PPP-2019", "MOTO" , 2019, 1, 600);
 		c.addBicicleta("bicicleta", 10, "vermelha", 4);
 		c.addManutencao("12/02/2000", "13:00", 200);
 		c.addLimpeza("12/02/2000", "13:00", 50);
 		c.addGuincho("12/02/2000", "13:00", 100);
-
+*/
 		System.out.println(c.toString());
 		System.out.println("_____________________________________\n");
-		
-		Produto p1 = c.getProdutos().get(0);
+		/* esse .get() vem da onde?*/
+		c.setProdutos(p1);
 		Produto p2 = c.getProdutos().get(1);
 		Produto p3 = c.getProdutos().get(2);
 		Produto p4 = c.getProdutos().get(3);
 		Produto p5 = c.getProdutos().get(4);
 		Produto p6 = c.getProdutos().get(5);
-
+		 	
 		System.out.println(c.getProdutos().size());
 
 		System.out.println("Gerando relatorio...");
