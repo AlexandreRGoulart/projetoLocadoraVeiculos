@@ -14,10 +14,13 @@ public class Generico <E> {
 		return elemento;
 	}
 	
+	/*AJUDA AQUI */
 	public E inserirElemento(ArrayList<? extends Veiculo> lista) {
 		
 		return this.getElemento();
 	}
+	/*!!!!!!!!!!!*/
+	
 	public static void main (String[] args) {
 	Generico<Manutencao> g = new Generico<>();
 	//g.setElemento("Elemento");

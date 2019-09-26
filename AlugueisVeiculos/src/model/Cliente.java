@@ -8,8 +8,9 @@ public class Cliente {
 	private String cpf;
 	private String telefone;
 	private String endereco;
-/*
+
 	private List<Produto> produtos;
+	/*
 	-------------------------------
 	private List<IProduto> produtos;
 	private List<IProduto> produtos1;
@@ -31,6 +32,10 @@ public class Cliente {
 		this.endereco = endereco;
 		//this.produtos = new ArrayList<Produto>();
 		
+	}
+	
+	public boolean setProduto() {
+		this.
 	}
 	
 	
