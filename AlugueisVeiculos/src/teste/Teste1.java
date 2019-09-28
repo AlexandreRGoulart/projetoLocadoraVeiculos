@@ -20,7 +20,7 @@ public class Teste1 {
 		
 		System.out.println("Testando...");
 		Cliente c = new Cliente("Fulano", "111.222.333-44", "987654321", "Rua1");
-		Carro ca1 = new Carro("carro", 1000, "branco", "2145896", "POO-2019", "CARRO" , 2019, 1, 5, 4);
+		
 		
 		/*c.addCarro("carro", 1000, "branco", "2145896", "POO-2019", "CARRO" , 2019, 1, 5, 4);*/
 		
@@ -33,9 +33,16 @@ public class Teste1 {
 */
 		System.out.println(c.toString());
 		System.out.println("_____________________________________\n");
-		/* esse .get() vem da onde?*/
-		//Generico g = new Generico();
-		c.setProdutos((List<? extends Veiculo>) ca1);
+		
+		Generico<Produto> g = new Generico<>(new Carro("carro", 1000, "branco", "2145896", "POO-2019", "CARRO" , 2019, 1, 5, 4));
+		/*public Carro(String nome, double precoPorAluguel, String cor, String chassi, String placa, String modelo, int ano,
+			double motor, int lugares, int portas) {*/
+		Carro ca1 = g.getElemento();
+		
+		
+		
+		/*Dado<Pessoa> d = new Dado<>(new Pessoa(“Ze”,20));
+		Pessoa x = d.getDado();*/
 		Produto p2 = c.getProdutos().get(1);
 		Produto p3 = c.getProdutos().get(2);
 		Produto p4 = c.getProdutos().get(3);
