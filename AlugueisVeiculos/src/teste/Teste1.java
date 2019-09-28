@@ -37,7 +37,8 @@ public class Teste1 {
 		Generico<Produto> g = new Generico<>(new Carro("carro", 1000, "branco", "2145896", "POO-2019", "CARRO" , 2019, 1, 5, 4));
 		/*public Carro(String nome, double precoPorAluguel, String cor, String chassi, String placa, String modelo, int ano,
 			double motor, int lugares, int portas) {*/
-		Carro ca1 = g.getElemento();
+		Carro ca1 = (Carro) g.getElemento();
+		System.out.println(ca1.getNome());
 		
 		
 		

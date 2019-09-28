@@ -2,7 +2,7 @@ package model;
 
 import java.util.ArrayList;
 
-public class Generico <E> {
+public class Generico <E extends Veiculo> {
 	
 	private E elemento;
 	
